@@ -3,54 +3,141 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sonu Kumar Sah | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio – Redesigned</title>
+  <style>
+    :root {
+      --accent: #2563eb;
+      --bg: #f7f7f9;
+      --text: #222;
+      --card-bg: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 5rem 1.5rem;
+      text-align: center;
+      background: linear-gradient(to bottom right, #3b82f6, #1d4ed8);
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 1rem;
+      font-size: 1.25rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    button, .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.2s;
+      margin-top: 1rem;
+      text-decoration: none;
+    }
+
+    button:hover, .btn:hover {
+      background: #1e40af;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+      background: #e5e7eb;
+      color: #444;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.6rem; }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Sonu<span> Kumar </span></div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#socials">Socials</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Hi, I'm <span>Sonu Kumar Sah</span></h1>
-      <p>From Gaushala, Mahottari — currently living in Bolton, UK.</p>
-      <button id="contactBtn">Get in Touch</button>
-    </div>
-  </section>
+<header>
+  <h1>YOUR NAME</h1>
+  <p>Developer • Designer • Creator</p>
+</header>
 
-  <section id="about" class="about">
+<div class="container">
+
+  <section class="card">
     <h2>About Me</h2>
-    <p>
-      I'm Sonu Kumar Sah, passionate about learning, exploring new ideas, and building creative digital experiences.
-      This site is a simple portfolio where I share who I am and how to reach me.
-    </p>
+    <p>Hello! I'm a developer passionate about building modern, clean, and functional digital experiences. I specialize in frontend development, UI design, and interactive web projects.</p>
   </section>
 
-  <section id="contact" class="contact">
+  <section class="card">
+    <h2>Projects</h2>
+    <p>Here are some of my featured works:</p>
+    <ul style="margin-left: 1.2rem; margin-top: 1rem;">
+      <li>Project A – Description of the project and technologies used.</li>
+      <li>Project B – A cool web tool or creative build.</li>
+      <li>Project C – Something impressive to show clients/employers.</li>
+    </ul>
+    <a href="#" class="btn">See Full Portfolio</a>
+  </section>
+
+  <section class="card">
     <h2>Contact</h2>
-    <p><strong>Phone:</strong> +44-7501323036</p>
-    <p><strong>Email:</strong> sonusah7982@gmail.com</p>
+    <p>If you'd like to work together or discuss opportunities, feel free to reach out.</p>
+    <button onclick="contact()">Contact Me</button>
   </section>
 
-  <section id="socials" class="socials">
-    <h2>Connect with Me</h2>
-    <a href="https://instagram.com/sonusksah" target="_blank" class="social-btn">Instagram</a>
-  </section>
+</div>
 
-  <footer>
-    <p>© 2025 Sonu Kumar Sah | All Rights Reserved</p>
-  </footer>
+<footer>
+  © 2025 Your Name — All Rights Reserved
+</footer>
 
-  <script src="script.js"></script>
+<script>
+function contact() {
+  alert("Thanks for reaching out! Replace this with a real contact form or email link.");
+}
+</script>
+
 </body>
 </html>
 
-
+    
